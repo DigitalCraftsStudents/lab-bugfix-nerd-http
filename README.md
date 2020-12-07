@@ -11,9 +11,12 @@ Slytherin
 
 # Bugs
 
-- [ ] The `dev` script no longer works
-- [ ] App crashes on browser refresh with `Error [ERR_STREAM_WRITE_AFTER_END]: write after end`
-- [ ] After moving the `http.createServer()` callback to another file, couldn't get server to run
+- [X] The `dev` script no longer works
+    - Fixed typo in `package.json` "dve" => "dev"
+- [X] App crashes on browser refresh with `Error [ERR_STREAM_WRITE_AFTER_END]: write after end`
+    - Made sure `.end()` was last thing done with response.
+- [X] After moving the `http.createServer()` callback to another file, couldn't get server to run
+    - Chris messed up. Everything's fine :thumbsup:
 
 # For the more curious
 
